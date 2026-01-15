@@ -7,6 +7,14 @@ import { cn } from '../lib/utils';
 import { Sparkles } from 'lucide-react';
 import ThreeDCake from './ThreeDCake'; // [NEW]
 
+// Imports for Polaroid Images (Option A Fix)
+import cakeGallery4 from '../assets/images/gallery-4.jpg';
+import cakeAddon2 from '../assets/images/2c90570b-c5b1-484f-a247-7e790efa5f2c.jpg';
+import cakeGallery5 from '../assets/images/gallery-5.jpg';
+import cakeHero1 from '../assets/images/hero1.jpg';
+import cakeHero4 from '../assets/images/hero4.jpg';
+import cakeAddon3 from '../assets/images/addon2.jpg'; // Assuming this is correct/exists
+
 const CakeSection = () => {
   const [blownCandles, setBlownCandles] = useState([]);
   const [openLetter, setOpenLetter] = useState(null);
@@ -74,31 +82,31 @@ const CakeSection = () => {
       {/* PHOTOS: Left Top (Corner) */}
       <div className="absolute top-24 left-72 z-0 hidden lg:block opacity-60 rotate-3 transform hover:rotate-0 transition-transform duration-500">
         <div className="w-40 h-48 bg-white p-2 shadow-lg">
-          <img src="../src/assets/images/gallery-4.jpg" className="w-full h-32 object-cover bg-gray-200" />
-          <p className="text-black text-xs text-center mt-2 font-serif italic">Little Peng!</p>
+          <img src={cakeGallery4} className="w-full h-32 object-cover bg-gray-200" />
+          <p className="text-black text-xs text-center mt-2 font-serif italic">Beginning</p>
         </div>
       </div>
 
       {/* PHOTOS: Left Middle */}
       <div className="absolute top-1/2 left-40 -translate-y-1/2 z-0 hidden lg:block opacity-60 -rotate-6 transform hover:rotate-0 transition-transform duration-500">
         <div className="w-44 h-52 bg-white p-2 shadow-lg">
-          <img src="../src/assets/images/2c90570b-c5b1-484f-a247-7e790efa5f2c.jpg" className="w-full h-36 object-cover bg-gray-200" />
-          <p className="text-black text-xs text-center mt-2 font-serif italic">Gandara</p>
+          <img src={cakeAddon2} className="w-full h-36 object-cover bg-gray-200" />
+          <p className="text-black text-xs text-center mt-2 font-serif italic">Laughter</p>
         </div>
       </div>
 
       {/* Scattered Memories (Right Top - Corner) */}
       <div className="absolute top-20 right-72 z-0 hidden lg:block opacity-60 rotate-6 transform hover:rotate-0 transition-transform duration-500">
         <div className="w-40 h-48 bg-white p-2 shadow-lg">
-          <img src="../src/assets/images/gallery-5.jpg" className="w-full h-32 object-cover bg-gray-200" />
-          <p className="text-black text-xs text-center mt-2 font-serif italic">BLEEEEHHH</p>
+          <img src={cakeGallery5} className="w-full h-32 object-cover bg-gray-200" />
+          <p className="text-black text-xs text-center mt-2 font-serif italic">Sweet memories</p>
         </div>
       </div>
 
       {/* PHOTOS: Right Middle */}
       <div className="absolute top-1/2 right-40 -translate-y-1/2 z-0 hidden lg:block opacity-60 rotate-2 transform hover:rotate-0 transition-transform duration-500">
         <div className="w-44 h-52 bg-white p-2 shadow-lg">
-          <img src="../src/assets/images/addon2.jpg" className="w-full h-36 object-cover bg-gray-200" />
+          <img src={cakeAddon3} className="w-full h-36 object-cover bg-gray-200" />
           <p className="text-black text-xs text-center mt-2 font-serif italic">Galit</p>
         </div>
       </div>
@@ -106,7 +114,7 @@ const CakeSection = () => {
       {/* PHOTOS: Left Bottom (Corner) */}
       <div className="absolute bottom-20 left-72 z-0 hidden lg:block opacity-60 -rotate-3 transform hover:rotate-0 transition-transform duration-500">
         <div className="w-48 h-56 bg-white p-2 shadow-lg">
-          <img src="../src/assets/images/hero1.jpg" className="w-full h-40 object-cover bg-gray-200" />
+          <img src={cakeHero1} className="w-full h-40 object-cover bg-gray-200" />
           <p className="text-black text-xs text-center mt-2 font-serif italic">Pengu</p>
         </div>
       </div>
@@ -114,7 +122,7 @@ const CakeSection = () => {
       {/* PHOTOS: Right Bottom (Corner) */}
       <div className="absolute bottom-20 right-72 z-0 hidden lg:block opacity-60 rotate-4 transform hover:rotate-0 transition-transform duration-500">
         <div className="w-40 h-48 bg-white p-2 shadow-lg">
-          <img src="../src/assets/images/hero4.jpg" className="w-full h-32 object-cover bg-gray-200" />
+          <img src={cakeHero4} className="w-full h-32 object-cover bg-gray-200" />
           <p className="text-black text-xs text-center mt-2 font-serif italic">Nyarrr</p>
         </div>
       </div>

@@ -1,6 +1,10 @@
 import React, { useRef, useMemo } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
+import hero1 from '../assets/images/hero1.jpg';
+import hero2 from '../assets/images/hero2.jpg';
+import hero3 from '../assets/images/hero3.jpg';
+import hero4 from '../assets/images/hero4.jpg';
 
 const StarField = () => {
   const stars = useMemo(() => {
@@ -150,7 +154,7 @@ const Hero = () => {
           className="absolute top-[2%] left-[5%] w-48 bg-white p-3 shadow-2xl transform hover:scale-105 hover:rotate-0 transition-all duration-500 pointer-events-auto cursor-pointer"
         >
           <div className="w-full h-40 bg-gray-200 overflow-hidden mb-2 relative">
-            <img src="../src/assets/images/hero3.jpg" alt="Memory" className="w-full h-full object-cover filter sepia-[0.2]" />
+            <img src={hero3} alt="Memory" className="w-full h-full object-cover filter sepia-[0.2]" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             {/* Birthday Hat Decoration */}
             <div className="absolute top-2 right-2 text-3xl">🎉</div>
@@ -166,7 +170,7 @@ const Hero = () => {
           className="absolute bottom-[10%] left-[5%] w-52 bg-white p-3 shadow-2xl transform hover:scale-105 hover:rotate-0 transition-all duration-500 pointer-events-auto cursor-pointer"
         >
           <div className="w-full h-48 bg-gray-200 overflow-hidden mb-2 relative">
-            <img src="../src/assets/images/hero1.jpg" alt="Memory" className="w-full h-full object-cover filter contrast-125" />
+            <img src={hero1} alt="Memory" className="w-full h-full object-cover filter contrast-125" />
             <div className="absolute inset-0 ring-1 ring-black/5"></div>
             {/* Birthday Balloons */}
             <div className="absolute top-2 left-2 text-2xl">🎈🎈</div>
@@ -182,7 +186,7 @@ const Hero = () => {
           className="absolute top-[10%] right-[5%] w-44 bg-white p-3 shadow-2xl transform hover:scale-105 hover:rotate-0 transition-all duration-500 pointer-events-auto cursor-pointer"
         >
           <div className="w-full h-36 bg-gray-200 overflow-hidden mb-2 relative">
-            <img src="../src/assets/images/hero4.jpg" alt="Memory" className="w-full h-full object-cover filter brightness-110" />
+            <img src={hero4} alt="Memory" className="w-full h-full object-cover filter brightness-110" />
             {/* Birthday Cup */}
             <div className="absolute bottom-2 right-2 text-3xl">🥤</div>
           </div>
@@ -197,7 +201,7 @@ const Hero = () => {
           className="absolute bottom-[20%] right-[5%] w-50 bg-white p-3 shadow-2xl transform hover:scale-105 hover:rotate-0 transition-all duration-500 pointer-events-auto cursor-pointer"
         >
           <div className="w-full h-44 bg-gray-200 overflow-hidden mb-2 relative">
-            <img src="../src/assets/images/hero2.jpg" alt="Memory" className="w-full h-full object-cover filter saturate-150" />
+            <img src={hero2} alt="Memory" className="w-full h-full object-cover filter saturate-150" />
             {/* Party Hat */}
             <div className="absolute top-2 left-2 text-3xl">🎩</div>
           </div>

@@ -1,35 +1,40 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import gallery1 from '../assets/images/gallery-1.jpg';
+import gallery2 from '../assets/images/gallery-2.jpg';
+import gallery3 from '../assets/images/gallery-3.jpg';
+import gallery4 from '../assets/images/gallery-4.jpg';
+import gallery5 from '../assets/images/gallery-5.jpg';
 import { cn } from '../lib/utils';
 
 const memories = [
   {
     id: 1,
-    src: '../src/assets/images/gallery-1.jpg',
-    story: 'The First Spark',
-    description: 'Syempre tayo muna ako gumawa neto e. Remember this image? Damned this is the exact moment that i have got a feeling that this is the time i should confess to you, but bro you are giving me mix signals. Time seemed to slow down, and I knew something special was about to begin. Your body signals lit it up.',
+    src: gallery1,
+    story: 'Happy 21st Pengay',
+    description: 'Happy Birthday sa babaeng laging tulog, sa babaeng laging nagc-crave, and sa babaeng mahal na mahal ko. Always remember that I am always here for you.',
   },
   {
     id: 2,
-    src: '../src/assets/images/gallery-2.jpg',
+    src: gallery2,
     story: 'The Day?',
-    description: 'Remember this pic? This is our 4th time for a week going back again and again sa puro. Then you keep saying na ayaw mo sa puro duh. Anyways, yeah this is THE DAY na I GOT TO CONFESS TO YOU. Both of us got silent and awkward but after this day grabe na progress natin in our patago gala and relationship WAAAAHaaaahhh.',
+    description: 'Remember this pic? This is our 4rd time for a week going back again and again sa puro. Then you keep saying na ayaw mo sa puro duh. Anyways, yeah this is THE DAY na I GOT TO CONFESS TO YOU both got silent and awkward but after this day grabe na progress natin in our patago gala and relatioship WAAAAHaaaahhh.',
   },
   {
     id: 3,
-    src: '../src/assets/images/gallery-3.jpg',
+    src: gallery3,
     story: 'I dunno what to put na sa title basta last na2',
     description: 'Just want to say damn as the day goes my love goes deeper. Our Journey sometimes it might feel a little bit bitter but thats part of it. Sounds cringe right pake ko sakanila. Your laughter is my favorite sound in the world. The way you find humor in everything, even my terrible jokes, makes every day brighter.',
   },
   {
     id: 4,
-    src: '../src/assets/images/gallery-4.jpg',
+    src: gallery4,
     story: 'Little Peng!',
     description: 'Ang bata bata mo po dito oh, model ka pa ng place nato oh. Ang innocente na cute and soaper soft kapa tingnan dito love, ngayon ganon parin lumaki lang dumagdag ng konti.',
   },
   {
     id: 5,
-    src: '../src/assets/images/gallery-5.jpg',
+    src: gallery5,
     story: '21st Peng??',
     description: 'As you turn 21, I want you to know that this is just the beginning. More business to come pa to us kaya wag a-accept ng negashits i\'m always here baby. Also, I can\'t wait to create countless more memories with you. Happy Birthday, my love! 💕',
   },
